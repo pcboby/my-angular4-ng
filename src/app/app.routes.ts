@@ -2,14 +2,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 const routes: Routes = [{
-  path: 'Dashboard',
-  loadChildren: './dashboard/dashboard.module#DashboardModule'
+  path: '',
+  loadChildren: './pages/pages.module#PagesModule'
 }, {
   path: 'Errors',
   loadChildren: './errors/errors.module#ErrorsModule'
 }, {
   path: '**',
-  redirectTo: 'Dashboard'
+  redirectTo: ''
 }];
 
 @NgModule({
