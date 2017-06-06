@@ -8,6 +8,8 @@ const routes: Routes = [{
   children: [{
     path: 'Dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'
   }, {
+    path: 'Forms', loadChildren: './forms/forms.module#FormsModule'
+  }, {
     path: 'Aboutus', loadChildren: './aboutus/aboutus.module#AboutusModule'
   }]
 }];
