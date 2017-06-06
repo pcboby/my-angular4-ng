@@ -1,13 +1,14 @@
-import { ErrorsComponent } from './errors.component';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+
+import { ErrorsComponent } from './errors.component';
+import { ErrorsRoutes } from './errors.routes';
 
 @NgModule({
   imports: [
-    CommonModule
+    ErrorsRoutes,
+    RouterModule
   ],
-  declarations: [
-    ErrorsComponent
-  ]
+  declarations: [ErrorsComponent]
 })
 export class ErrorsModule { }
