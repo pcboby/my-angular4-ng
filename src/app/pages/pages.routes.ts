@@ -10,7 +10,7 @@ const routes: Routes = [{
   }, {
     path: 'Forms', loadChildren: './forms/forms.module#FormsModule'
   }, {
-    path: 'Aboutus', loadChildren: './aboutus/aboutus.module#AboutusModule'
+    path: 'Abouts', loadChildren: './abouts/abouts.module#AboutsModule'
   }]
 }];
 
