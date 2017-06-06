@@ -4,7 +4,10 @@ import { PagesComponent } from './pages.component';
 
 const routes: Routes = [{
   path: '',
-  component: PagesComponent
+  component: PagesComponent,
+  children: [{
+    path: 'Dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule',
+  }]
 }];
 
 @NgModule({
