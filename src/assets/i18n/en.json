@@ -1,5 +1,7 @@
 {
     "10000": "Dashboard",
-    "20000": "Abouts",
-    "30000": "Forms"
+    "20000": "Forms",
+    "30000": "Lists",
+    "40000": "Abouts",
+    "90000": "Welcome"
 }

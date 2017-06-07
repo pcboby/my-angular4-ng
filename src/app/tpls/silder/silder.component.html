@@ -1,5 +1,6 @@
 <ul>
-    <li><a [routerLink]="['/Dashboard']">Dashboard</a></li>
-    <li><a [routerLink]="['/Forms']">Forms</a></li>
-    <li><a [routerLink]="['/Abouts']">Abouts</a></li>
+    <li [routerLinkActive]="['active']"><a [routerLink]="['/Dashboard']">{{'10000' | translate}}</a></li>
+    <li [routerLinkActive]="['active']"><a [routerLink]="['/Forms']">{{'20000' | translate}}</a></li>
+    <li [routerLinkActive]="['active']"><a [routerLink]="['/Lists']">{{'30000' | translate}}</a></li>
+    <li [routerLinkActive]="['active']"><a [routerLink]="['/Abouts']">{{'40000' | translate}}</a></li>
 </ul>
