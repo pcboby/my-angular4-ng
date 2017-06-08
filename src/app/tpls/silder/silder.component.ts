@@ -7,8 +7,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SilderComponent implements OnInit {
 
-  constructor() { }
+  title='this is silder';
+  menus = [{
+    name: 'Dashboard',
+    code: '10000',
+    url: '/Dashboard'
+  }, {
+    name: 'Forms',
+    code: '20000',
+    url: '/Forms'
+  }, {
+    name: 'lists',
+    code: '30000',
+    url: '/Lists'
+  }, {
+    name: 'abouts',
+    code: '40000',
+    url: '/Abouts'
+  }];
 
+  heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+
+  constructor() { }
   ngOnInit() {
   }
 

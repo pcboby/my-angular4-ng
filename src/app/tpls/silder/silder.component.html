@@ -1,6 +1,5 @@
 <ul>
-    <li [routerLinkActive]="['active']"><a [routerLink]="['/Dashboard']">{{'10000' | translate}}</a></li>
-    <li [routerLinkActive]="['active']"><a [routerLink]="['/Forms']">{{'20000' | translate}}</a></li>
-    <li [routerLinkActive]="['active']"><a [routerLink]="['/Lists']">{{'30000' | translate}}</a></li>
-    <li [routerLinkActive]="['active']"><a [routerLink]="['/Abouts']">{{'40000' | translate}}</a></li>
+    <li *ngFor="let menu of menus" [routerLinkActive]="['active']">
+        <a [routerLink]="[menu.url]">{{menu.code | translate}}</a>
+    </li>
 </ul>

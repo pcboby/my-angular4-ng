@@ -16,7 +16,8 @@ export class HeaderComponent implements OnInit {
 
   changeLang(lang: string){
     console.log(lang)
-    this.translate.use(lang)
+    this.translate.use(lang);
+    localStorage.lang = lang;
   }
 
 }
