@@ -14,10 +14,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
 
-  changeLang(lang: string) {
+  changeLang(lang: string){
     console.log(lang)
     this.translate.use(lang)
-    localStorage.lang = lang;
   }
 
 }
