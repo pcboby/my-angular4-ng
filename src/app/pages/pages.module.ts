@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
@@ -12,7 +13,8 @@ import { SilderComponent, HeaderComponent, FooterComponent } from '../tpls';
     RouterModule,
     CommonModule,
     PagesRoutes,
-    TranslateModule
+    TranslateModule,
+    FormsModule
   ],
   declarations: [PagesComponent, HeaderComponent, FooterComponent, SilderComponent]
 })

@@ -8,14 +8,14 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private translate: TranslateService) { }
+     browserLang:string=localStorage.getItem('lang') || 'zh-CN';
 
+  constructor(private translate: TranslateService) { }
 
   ngOnInit() {
   }
 
-  changeLang(lang: string){
-    console.log(lang)
+  changeLang(lang: string) {
     this.translate.use(lang);
     localStorage.lang = lang;
   }

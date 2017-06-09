@@ -13,9 +13,9 @@ export class SilderComponent implements OnInit {
     code: '10000',
     url: '/Dashboard'
   }, {
-    name: 'Forms',
+    name: 'Form',
     code: '20000',
-    url: '/Forms'
+    url: '/Form'
   }, {
     name: 'lists',
     code: '30000',

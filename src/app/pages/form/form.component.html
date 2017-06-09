@@ -1,0 +1,12 @@
+<p>
+    form works!
+</p>
+
+<select [(ngModel)]="comId">
+  <option [value]="c.id" *ngFor="let c of comIdList">{{c.name}}</option>
+</select> {{comId}}
+<div>
+    <label *ngFor="let t of typeList">
+      <input type="radio" (change)="type=t.id" name="type" [checked]="type===t.id">{{t.name}}
+    </label> {{type}}
+</div>
