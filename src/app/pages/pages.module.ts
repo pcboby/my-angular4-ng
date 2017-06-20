@@ -7,6 +7,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { PagesComponent } from './pages.component';
 import { PagesRoutes } from './pages.routes';
 import { SilderComponent, HeaderComponent, FooterComponent } from '../tpls';
+import { MaterialModule } from "@angular/material";
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { SilderComponent, HeaderComponent, FooterComponent } from '../tpls';
     CommonModule,
     PagesRoutes,
     TranslateModule,
-    FormsModule
+    FormsModule,
+    MaterialModule
   ],
   declarations: [PagesComponent, HeaderComponent, FooterComponent, SilderComponent]
 })

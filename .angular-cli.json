@@ -18,9 +18,12 @@
         "testTsconfig": "tsconfig.spec.json",
         "prefix": "app",
         "styles": [
-            "themes/default/css/style.css"
+            "themes/default/css/style.css",
+            "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css"
         ],
-        "scripts": [],
+        "scripts": [
+            "../node_modules/hammerjs/hammer.min.js"
+        ],
         "environmentSource": "environments/environment.ts",
         "environments": {
             "dev": "environments/environment.ts",

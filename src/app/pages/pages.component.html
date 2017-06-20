@@ -1,4 +1,9 @@
-<app-header></app-header>
+<div [class.dark-theme]="isDarkTheme">
+    <md-toolbar>
+        <app-header></app-header>
+    </md-toolbar>
+</div>
+
 <app-silder></app-silder>
 <router-outlet></router-outlet>
 <app-footer></app-footer>

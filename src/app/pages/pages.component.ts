@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagesComponent implements OnInit {
 
+    isDarkTheme=false;
   constructor(public router: Router) { }
 
   ngOnInit() {

@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Http, HttpModule } from '@angular/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { MaterialModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routes';
@@ -21,6 +22,7 @@ export function HttpLoaderFactory(http:Http) {
     AppRoutes,
     HttpModule,
     FormsModule,
+    MaterialModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

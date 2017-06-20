@@ -8,10 +8,9 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class HeaderComponent implements OnInit {
 
-     browserLang:string=localStorage.getItem('lang') || 'zh-CN';
+    browserLang:string=localStorage.getItem('lang') || 'zh-CN';
 
   constructor(private translate: TranslateService) { }
-
   ngOnInit() {
   }
 
